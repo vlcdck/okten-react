@@ -11,7 +11,7 @@ export const UsersComponent = () => {
     useEffect(() => {
         getData<DummyResponse & {users: IUser[]}>('/users')
             .then(value => setUsers(value.users));
-    }, [users]);
+    });
 
     return (
         <div>

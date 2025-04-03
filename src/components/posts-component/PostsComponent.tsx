@@ -11,7 +11,7 @@ export const PostsComponent = () => {
     useEffect(() => {
         getData<DummyResponse & { posts: IPost[] }>('/posts')
             .then(value => setPosts(value.posts));
-    }, [posts]);
+    });
 
     return (
         <div>
