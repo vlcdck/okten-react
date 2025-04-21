@@ -1,19 +1,10 @@
-import {useEffect} from "react";
-import {loadAuthProducts, refresh} from "../services/api.service.ts";
+import {AuthProductsComponent} from "../components/auth-resources-component/AuthProductsComponent.tsx";
 
 export const AuthResourcesPage = () => {
 
-    useEffect(() => {
-        loadAuthProducts().then(products => {
-            console.log(products);
-        }).catch(() => {
-            refresh()
-                .then(() => loadAuthProducts())
-                .then(value => console.log(value));
-        })
-    }, []);
-
     return (
-        <>Auth resources</>
+        <div>
+            <AuthProductsComponent/>
+        </div>
     );
 };

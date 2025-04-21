@@ -4,3 +4,4 @@ import {RouterProvider} from "react-router-dom";
 import {routes} from "./router/Routes.tsx";
 
 createRoot(document.getElementById('root')!).render(<RouterProvider router={routes}/>)
+// підключаємо в основний файл шляхи для навігації
