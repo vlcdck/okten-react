@@ -1,10 +1,10 @@
+import {MainMenuComponent} from "../components/main-menu/MainMenuComponent.tsx";
 import {Outlet} from "react-router-dom";
-import {MainMenu} from "../components/main-menu/MainMenu.tsx";
 
 export const MainLayout = () => {
     return (
         <>
-            <MainMenu/>
+            <MainMenuComponent/>
             <Outlet/>
         </>
     );
